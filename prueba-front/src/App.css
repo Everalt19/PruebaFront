@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: white;
+}
+.prueba-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 500px;
+  min-height: 500px;
+  text-align: center;
+  margin: 100px auto;
+  padding-bottom: 32px;
+  border: #003366 solid 2px ;
+}
+
+h1 {
+  margin: 40px 0;
+  color: #003366;
+  font-size: 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+ text-decoration-style: double;
+  opacity: 50%;
+  
+}
+
+.check-complete{
+  width: 80px;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #003366;
+  outline: none;
+  width: 360px;
+  background: transparent;
+  color: black;
+}
+
+.todo-input::placeholder {
+  color: #8c8c8c;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 51, 102) 0%,
+    rgba(0, 77, 153) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #003366;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 51, 102) 0%,
+    rgba(0, 77, 153) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 51, 102) 0%,
+    rgba(0, 77, 153) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+#icon1{
+  margin-right: 10px;
+}
+#icon1:hover{
+  color: rgb(243, 243, 78);
+}
+
+#icon2{
+  margin-right: 10px;
+}
+#icon2:hover{
+  color: rgb(248, 81, 81);
+}
+
+#icon3{
+  margin-right: 0px;
+}
+#icon3:hover{
+  color: rgb(86, 226, 86);
+}
+#icon3:visited{
+  color: red;
+}
